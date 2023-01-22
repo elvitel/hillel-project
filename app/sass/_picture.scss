@@ -1,0 +1,37 @@
+.picture {
+    background-image: url('../img/ecommerce.svg');
+    background-color: $colorLight;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 92px;
+    height: 92px;
+}
+
+.picture--ecomm {
+    background-image: url('../img/ecommerce.svg');
+}
+
+.picture--brief {
+    background-image: url('../img/briefcase.svg');
+}
+
+.picture--corp {
+    background-image: url('../img/corporate.svg');
+}
+
+.picture--trust {
+    background-image: url('../img/trust.svg');
+}
+
+.picture--protect {
+    background-image: url('../img/protection.svg');
+}
+
+.picture--court {
+    background-image: url('../img/court.svg');
+}
+
+
+
+

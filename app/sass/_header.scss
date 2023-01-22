@@ -1,0 +1,243 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+}
+
+.header__contacts {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorMobile;
+    margin: 0 -15px;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header__contacts--lt {
+    background-color: $colorMoblt;
+}
+
+.header__lang {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__lang a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $colorLight;
+    border-radius: 8px;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.header__lang--lt a:not(.header__lang-active--lt) {
+    color: $colorMenu;
+}
+
+.header__lang a:not(.header__lang-active):hover {
+    background-color: $colorHover;
+}
+
+.header__lang--lt a:not(.header__lang-active):hover {
+    background-color: $colorMoblt;
+}
+
+.header__lang-active {
+    background-color: $colorAccent;
+}
+
+.header__address,
+.header__facebook,
+.header__menu-list {
+    display: none;
+}
+
+.header__tel {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $colorLight;
+}
+
+.header__tel--lt {
+    color: $colorMenu;
+}
+
+.header__box {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.header__box img {
+    vertical-align: bottom;
+}
+
+.header__pages {
+    display: inline-flex;
+    font-size: 20px;
+    line-height: 24px;
+    color: $colorMain;
+}
+
+.header__pages::before {
+    content: '';
+    background-image: url(../img/slash.svg);
+    width: 12px;
+    height: 26px;
+}
+
+.header__btn {
+    width: 32px;
+    height: 32px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding: 10px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+}
+
+.header__btn svg {
+    display: block;
+    width: 18px;
+    height: 3px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+    }
+    .header__contacts {
+        justify-content: flex-start;
+        background-color: transparent;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .header__address {
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorLight;
+        &::after,
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: $colorSeparator;
+            border-radius: 50%;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+    .header__address--lt {
+        color: $colorMenu;
+    }
+    .header__tel {
+        display: inline-flex;
+        align-items: center;
+    }
+    .header__tel::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: $colorSeparator;
+        border-radius: 50%;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .header__facebook {
+        display: inline-flex;
+    }
+    .header__box {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    .header__logo img {
+        width: 130px;
+        height: 60px;
+    }
+    .header__pages {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .header__pages::before {
+        width: 21px;
+        height: 47px;
+        background-size: 21px 47px;
+    }
+    .header__btn {
+        display: none;
+    }
+    .header__menu-list {
+        display: flex;
+        width: 416px;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+        padding-bottom: 5px;
+    }
+    .header__menu-list a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorLight;
+        padding-bottom: 3px;
+        border-bottom: 2px solid transparent;
+    }
+    .header__menu-list--lt a:not(.header__menu-list-active) {
+        color: $colorActive;
+    }
+    .header__menu-list--lt .header__menu-list-active,
+    .header__menu-list--lt .header__menu-list-active:hover {
+        color: $colorAccent;
+        border-bottom: 2px solid $colorAccent;
+    }
+    .header__menu-list a:hover {
+        border-bottom: 2px solid $colorLight;
+    }
+    .header__menu-list--lt a:not(.header__menu-list-active):hover {
+        border-bottom: 2px solid $colorActive;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content min-content;
+        align-items: center;
+    }
+    .header__contacts {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding-bottom: 16px;
+    }
+    .header__box {
+        grid-row: 1 / -1;
+        grid-column: 1 / 2;
+        padding-top: 50px;
+        padding-bottom: 6px;
+    }
+    .header__menu {
+        justify-self: end;
+    }
+}
+
+

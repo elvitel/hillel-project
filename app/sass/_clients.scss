@@ -1,0 +1,103 @@
+.clients__title {
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $colorMain;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.clients__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 120px);
+}
+
+.clients__cards div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients__cards div:nth-child(n+7) {
+    display: none;
+}
+
+.clients__hillel {
+    background-color: $backgroundHillel;
+}
+
+.clients__wanna {
+    background-color: $backgroundWanna;
+}
+
+.clients__tapgerine {
+    background: $backgroundTapgerine;
+}
+
+.clients__3d {
+    background-color: $background3d;
+}
+
+.clients__orangear {
+    background-color: $backgroundOrangear;
+}
+
+.clients__adtelligent {
+    background-color: $backgroundAdtelligent;
+}
+
+.clients__clickky {
+    background-color: $backgroundClickky;
+}
+
+.clients__eco {
+    background-color: $backgroundEco;
+}
+
+.clients__infra {
+    background-color: $backgroundInfra;
+}
+
+.clients__citypark {
+    background-color: $backgroundCitypark;
+}
+
+.clients__artprint {
+    background-color: $backgroundArtprint;
+}
+
+.clients__ultimate {
+    background-color: $backgroundUltimate;
+}
+
+@media (min-width: 768px) {
+    .clients__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 120px);
+    }
+    .clients__cards div:nth-child(n+7) {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    .clients__cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 120px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

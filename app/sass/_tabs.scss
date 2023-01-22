@@ -1,0 +1,104 @@
+.tabs {
+    padding: 30px;
+}
+
+.tabs__switcher {
+    display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 30px;
+    border-bottom: 4px solid $colorBorder;
+}
+
+.tabs__switcher::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs__switcher button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-right: 30px;
+}
+
+.tabs__switcher-pass {
+    color: $colorMenu;
+    background: transparent;
+}
+
+.tabs__switcher-active {
+    background: $gradTab;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.tabs__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $colorLight;
+}
+
+.tabs__text {
+    font-size: 19px;
+    line-height: 30px;
+    color: $colorLight;
+}
+
+@media (min-width: 768px) {
+    .tabs {
+        padding: 60px 15px;
+    }
+    .tabs__switcher {
+        padding-bottom: 60px;
+    }
+    .tabs__switcher button {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .tabs__title {
+        padding-top: 60px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@media (min-width: 992px) {
+    .tabs {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        max-width: 1110px;
+    }
+    .tabs__switcher {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 30px;
+        justify-items: end;
+        padding-right: 60px;
+        border-right: 4px solid $colorBorder;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .tabs__switcher button {
+        margin-right: 0;
+    }
+    .tabs__content {
+        align-self: center;
+        padding-left: 60px;
+    }
+    .tabs__title {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
+
+

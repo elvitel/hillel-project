@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/montserrat-v25-latin-700.woff2" as="font" type="font/woff"
+        crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin-700italic.woff2" as="font" type="font/woff"
+        crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin-italic.woff2" as="font" type="font/woff"
+        crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-v25-latin-regular.woff2" as="font" type="font/woff"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Homepage</title>
+</head>
+<body class="body">
+    <div class="cover">
+        <header class="container header">
+            <div class="header__contacts">
+                <ul class="header__lang">
+                    <li><a href="#">ук</a></li>
+                    <li><a href="#">ру</a></li>
+                    <li><a class="header__lang-active" href="#">en</a></li>
+                </ul>
+                <div class="header__address">Ky"iv, Mechnikova str., 14/1</div>
+                <a class="header__tel" href="tel:+0800211927">0800 211 927</a>
+                <a class="header__facebook facebook" href="#" aria-label="facebook link">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_32483_1540)">
+                            <path
+                                d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_32483_1540">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__box">
+                <a class="header__logo" href="./index.html">
+                    <img class="img-responsive" src="./img/logo.svg" width="70" height="33" alt="Logo">
+                </a>
+            </div>
+            <nav class="header__menu">
+                <button class="header__btn" type="button" aria-label="hamburger button">
+                    <div>
+                        <svg width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.5H18" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.5H18" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <svg width="18" height="3" viewBox="0 0 18 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.5H18" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                </button>
+                <ul class="header__menu-list">
+                    <li><a href="./about.html">about us</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">team</a></li>
+                    <li><a href="#">publications</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="container provider">
+            <h1 class="provider__title">you legal solutions provider</h1>
+            <a class="provider__scroll" href="#tab" aria-label="scroll">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22728_11340)">
+                        <circle class="provider__scroll-red" opacity="0.5" cx="21" cy="21" r="20" stroke="white"
+                            stroke-width="2" />
+                        <path class="provider__scroll-red" d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22728_11340">
+                            <rect width="42" height="42" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </section>
+        <section id="tab" class="container tabs">
+            <h2 class="visually-hidden"></h2>
+            <article class="tabs__switcher">
+                <button class="tabs__switcher-active" type="button">Consistent</button>
+                <button class="tabs__switcher-pass" type="button">Customer oriented</button>
+                <button class="tabs__switcher-pass" type="button">Innovative</button>
+                <button class="tabs__switcher-pass" type="button">Business oriented</button>
+            </article>
+            <article class="tabs__content">
+                <h3 class="tabs__title">We turn the idea of legal services</h3>
+                <p class="tabs__text">Consolidating many years of experience and practice, the company's lawyers
+                    accompany complex projects and achieve a number of important decisions for the industry. Many of
+                    them form the practice of applying the law of the sea in Ukraine.</p>
+            </article>
+        </section>
+        <section class="container better">
+            <a class="better__link link" href="#">
+                services
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                </svg>
+            </a>
+            <h2 class="better__title">What can we do better than others?</h2>
+            <div class="better__box">
+                <article class="better__item">
+                    <div class="better__pic picture picture--ecomm"></div>
+                    <a class="better__item-title" href="#">IT and e-commerce</a>
+                    <p class="better__text">An endless stream of contracts, tax issues, labor relations, corporate
+                        papers - legal work distracts you from doing business. But there is not much work to do to hire
+                        an in-house lawyer.</p>
+                </article>
+                <article class="better__item">
+                    <div class="better__pic picture picture--brief"></div>
+                    <a class="better__item-title" href="#">Comprehensive daily
+                        legal support</a>
+                    <p class="better__text">In addition, over time, the work will become the same type and uninteresting
+                        for a full-time lawyer. And we know very well how difficult it is to find a good candidate with
+                        experience in the field of information technology in Ukraine.</p>
+                </article>
+                <article class="better__item">
+                    <div class="better__pic picture picture--corp"></div>
+                    <a class="better__item-title" href="#">Structuring corporate relationships</a>
+                    <p class="better__text">Instead of just providing legal services, we will hire a lawyer or a whole
+                        team that will fit into the daily life of your company.</p>
+                </article>
+                <article class="better__item">
+                    <div class="better__pic picture picture--trust"></div>
+                    <a class="better__item-title" href="#">Building contractual relations</a>
+                    <p class="better__text">Once a week, or week after month, you have your own lawyer by your side.
+                        Anyone in the company can catch it at the coffee maker and just talk about current affairs
+                        instead of waiting for update status.</p>
+                </article>
+                <article class="better__item">
+                    <div class="better__pic picture picture--protect"></div>
+                    <a class="better__item-title" href="#">Protection of business, intellectual property</a>
+                    <p class="better__text">And all the other time he will work on new diverse projects, so he will
+                        definitely not stop in professional development. One way or another, all Axon Partners will work
+                        for you instead of a corporate lawyer.</p>
+                </article>
+                <article class="better__item">
+                    <div class="better__pic picture picture--court"></div>
+                    <a class="better__item-title" href="#">Judicial representation</a>
+                    <p class="better__text">Is it a small, medium-sized company or a market leader? Local business or
+                        multinational company? Do you have your own legal department or not?</p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="container manager">
+            <h2 class="visually-hidden"></h2>
+            <div class="manager__box">
+                <img class="img-responsive manager__photo" src="./img/manager.jpg" width="400" height="344"
+                    alt="Manager">
+                <div class="manager__item">
+                    <a class="manager__link link" href="#">
+                        team
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <p class="manager__text-resp">We are used to take responsibility and always guarantee honest, timely
+                        assistance, even in
+                        situations when most are powerless.</p>
+                    <p class="manager__text-name">Oleksandr Oleksandrovsky</p>
+                    <p class="manager__text-position">Managing partner</p>
+                </div>
+            </div>
+            <div class="manager__slider">
+                <button class="slider slider--active" type="button" aria-label="slider"></button>
+                <button class="slider" type="button" aria-label="slider"></button>
+                <button class="slider" type="button" aria-label="slider"></button>
+            </div>
+        </section>
+        <section class="container container--lg clients">
+            <h2 class="clients__title">They already trust us</h2>
+            <div class="clients__cards">
+                <div class="clients__hillel">
+                    <img class="img-responsive" src="./img/hillel.png" width="217" height="48" alt="Hillel">
+                </div>
+                <div class="clients__wanna">
+                    <img class="img-responsive" src="./img/wanna.png" width="199" height="32" alt="Wanna">
+                </div>
+                <div class="clients__tapgerine">
+                    <img class="img-responsive" src="./img/tapgerine.png" width="179" height="44" alt="Tapgerine">
+                </div>
+                <div class="clients__3d">
+                    <img class="img-responsive" src="./img/3d.png" width="180" height="42" alt="3d">
+                </div>
+                <div class="clients__orangear">
+                    <img class="img-responsive" src="./img/orangear.png" width="174" height="44" alt="Orangear">
+                </div>
+                <div class="clients__adtelligent">
+                    <img class="img-responsive" src="./img/adtelligent.png" width="187" height="48" alt="Adtelligent">
+                </div>
+                <div class="clients__clickky">
+                    <img class="img-responsive" src="./img/clickky.png" width="138" height="61" alt="Clickky">
+                </div>
+                <div class="clients__eco">
+                    <img class="img-responsive" src="./img/eco.png" width="146" height="76" alt="Eco">
+                </div>
+                <div class="clients__infra">
+                    <img class="img-responsive" src="./img/infra.png" width="182" height="60" alt="Infra">
+                </div>
+                <div class="clients__citypark">
+                    <img class="img-responsive" src="./img/city.png" width="181" height="38" alt="Citypark">
+                </div>
+                <div class="clients__artprint">
+                    <img class="img-responsive" src="./img/artprint.png" width="189" height="46" alt="Artprint">
+                </div>
+                <div class="clients__ultimate">
+                    <img class="img-responsive" src="./img/ultimate.png" width="152" height="95" alt="Ultimate">
+                </div>
+            </div>
+        </section>
+        <section class="something">
+            <div class="container">
+                <div class="something__block">
+                    <a class="something__link link" href="#">
+                        publications
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <h2 class="something__title">We have something to tell</h2>
+                    <div class="something__box">
+                        <article class="something__unit1">
+                            <img class="img-responsive something__img" src="./img/meeting.jpg" width="420" height="200"
+                                alt="Meeting">
+                            <div class="something__item">
+                                <a class="something__item-link" href="#">Equity associate</a>
+                                <p class="something__date">April 22</p>
+                                <p class="something__text">I'm a jun on projects. I am a co-owner of a law firm. How it
+                                    happened. Before entering my
+                                    parents told me that if I…</p>
+                            </div>
+                        </article>
+                        <article class="something__unit2">
+                            <img class="img-responsive something__img" src="./img/gdpr.jpg" width="420" height="200"
+                                alt="Logo">
+                            <div class="something__item">
+                                <a class="something__item-link" href="#">Penalty for the Good Corporation: what will
+                                    happen to Google and others for violating the GDPR</a>
+                                <p class="something__date">September 29</p>
+                                <p class="something__text">And why the recovery of 50 million euros could be a fateful
+                                    precedent According to Mind.ua January 21 National Commission for Data Protection.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="something__unit3">
+                            <img class="img-responsive something__img" src="./img/notebook.jpg" width="420" height="200"
+                                alt="People">
+                            <div class="something__item">
+                                <a class="something__item-link" href="#">Millennial Testament</a>
+                                <p class="something__date">August 19</p>
+                                <p class="something__text">What and how modern vloggers, opinion leaders and
+                                    crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
+                                    looks like this: an apartment in…</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__unit">
+                <div class="footer__location">
+                    <div class="footer__address">Kyiv, Mechnikova str., 14/1</div>
+                    <a href="#">on map</a>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__facebook facebook" href="#" aria-label="facebook link">
+                        <svg class="facebook facebook--lg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_32483_1540)">
+                                <path class="facebook facebook--bl"
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_32483_1540">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="footer__tel" href="tel:+0800211927">0800 211 927</a>
+                    <a class="footer__email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                </div>
+                <p class="footer__text">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

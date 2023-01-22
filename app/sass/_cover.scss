@@ -1,0 +1,47 @@
+.cover {
+    background: url('../img/h.svg') no-repeat center top,
+                $gradSupersoft;
+    background-size: 523px 600px, cover;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+}
+
+.cover::after {
+    content: '';
+    height: 10px;
+    background-color: $colorShadow1;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.cover::before {
+    content: '';
+    height: 20px;
+    background-color: $colorShadow2;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+@media (min-width: 768px) {
+    .cover {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .cover {
+        background-size: 670px 768px, cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cover {
+        background-size: 697px 799px, cover;
+    }
+}

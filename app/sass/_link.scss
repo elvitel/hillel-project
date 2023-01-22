@@ -1,0 +1,22 @@
+.link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $colorActive;
+}
+
+.link svg {
+    padding-left: 2px;
+}
+
+.link:hover {
+    color: $colorAccent;
+}
+
+.link:hover path {
+    stroke: $colorAccent;
+}

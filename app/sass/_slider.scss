@@ -1,0 +1,15 @@
+.slider {
+    width: 16px;
+    height: 16px;
+    background-color: $colorActive;
+    opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    &--active {
+        opacity: 1;
+    }
+    &:not(&--active):hover {
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,87 @@
+.manager {
+    padding: 50px 30px 60px;
+}
+
+.manager__box {
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.manager__photo {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.manager__item {
+    padding: 30px;
+    background-color: $colorMoblt;
+    border-radius: 0 0 12px 12px;
+}
+
+.manager__link {
+    margin-bottom: 5px;
+    width: 60px;
+}
+
+.manager__text-resp {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $gradText;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-bottom: 30px;
+}
+
+.manager__text-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorMenu;
+    padding-bottom: 6px;
+}
+
+.manager__text-position {
+    font-size: 14px;
+    line-height: 22px;
+    color: $colorMenu;
+}
+
+.manager__slider {
+    display: flex;
+    width: 78px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .manager {
+       padding: 80px 15px 60px;
+    }
+    .manager__text-resp {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+@media (min-width: 992px) {
+    .manager__box {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: auto;
+    }
+    .manager__photo {
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+    }
+    .manager__item {
+        border-radius: 0 12px 12px 0;
+    }
+}
+
+
